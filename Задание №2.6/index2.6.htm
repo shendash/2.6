@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style2.6.css"> 
+        <script type="text/javascript" src="jquery-3.7.0.js"></script>
+    </head>
+    <body>
+        <div>
+            <img class="img2" src="pion.jpeg" height="500px" width="500px">
+            <img class="img1" src="roza.jpg" height="500px" width="500px">
+        </div>   
+        <script>
+           $(document).ready(function() {
+             $(".img1").click(function() {
+             $(this).slideUp(); // Уезжает вверх
+             $(".img2").slideDown(); // Появляется второе изображение
+            }); 
+        })
+        $(document).ready(function() {
+           $(".img2").click(function() {
+             $(this).slideUp(); // Уезжает вверх
+             $(".img1").slideDown(); // Первое изображение спускается вниз
+            });
+        });
+        </script>
+    </body>
+</html>
